@@ -53,6 +53,8 @@ Ctrl + Shift + P      #<- Open search bar
     Type [ settings.json ]. 
     Select [ Preferences: Open User Settings (JSON) ]. 
     Add the following key to the json file 
-        [ "python.defaultInterpreterPath": "C:\\XData\\env_ird_p1\\env\\Scripts\\python.exe", ]. 
+        [ "python.defaultInterpreterPath": "C:\\XData\\env_rmutx\\.env\\Scripts\\python.exe", ]. 
+
+
 
 
