@@ -1,0 +1,58 @@
+RmUT-X Shop [ RmUT-X_Shop ] 
+
+# GitHub 
+##----------------------------------------------- 
+1 https://github.com 
+    Username : [Username] 
+    Email    : [Email] 
+    Password : [Password] 
+2 https://git-scm.com 
+3 download and install 
+4 Config git 
+    Git Bash>git update-git-for-windows 
+    Git Bash>git --version 
+    Git Bash>git config --global user.name "[Username]" 
+    Git Bash>git config --global user.email "[Email]" 
+    Git Bash>git config --list 
+5 Git Basic Command 
+    Git Bash>git --version 
+    Git Bash>git clone https://github.com/meanakorn/RmUT-X_Shop.git rmutx
+[Foldername] 
+    Git Bash>git submodule update --init --recursive 
+    Git Bash>git submodule update --remote --merge 
+    Git Bash>git pull 
+    Git Bash>git add . 
+    Git Bash>git commit -m "[Comment]" 
+    Git Bash>git push 
+    Git Bash>git tag 
+    Git Bash>git tag 0.1 
+    Git Bash>git push origin 0.1 
+    Git Bash>git push origin -d 0.1 
+    Git Bash>git tag -d 0.1 
+6 Rollback to [hashid] commit point 
+    Git Bash>git checkout [hashid] 
+
+
+
+# Requirement 
+##----------------------------------------------- 
+asgiref==3.8.1
+Django==5.1.3
+pillow==11.0.0
+sqlparse==0.5.2
+tzdata==2024.2
+
+
+
+# Bugfix [ Pylance(reportMissingImports) ]. 
+##----------------------------------------------- 
+>which python3        #<- Mac/Linux 
+>where python         #<- Windows 
+
+Ctrl + Shift + P      #<- Open search bar 
+    Type [ settings.json ]. 
+    Select [ Preferences: Open User Settings (JSON) ]. 
+    Add the following key to the json file 
+        [ "python.defaultInterpreterPath": "C:\\XData\\env_ird_p1\\env\\Scripts\\python.exe", ]. 
+
+
