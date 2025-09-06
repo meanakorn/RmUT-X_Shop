@@ -25,7 +25,7 @@ def items(request):
     })
 
 def detail(request, pk):
-    item = get_object_or_404(tb_item, pk=pk)
+    item = get_object_or_404(tb_item, pk = pk)
     related_items = tb_item.objects.filter(category=item.category, is_sold = False).exclude(pk = pk)[0:3]
 
     return render(request, 'app_item/detail.html', {
